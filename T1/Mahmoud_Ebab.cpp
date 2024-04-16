@@ -21,7 +21,7 @@ long long max_bipartite_edges(int n, const vector<vector<int>>& adj) {
         int nodeColor = color[node];
 
         for (int neighbor : adj[node]) {
-            if (color[neighbor] == -1) { 
+            if (color[neighbor] == -1) {
                 color[neighbor] = 1 - nodeColor;
                 q.push(neighbor);
                 count[color[neighbor]]++; 

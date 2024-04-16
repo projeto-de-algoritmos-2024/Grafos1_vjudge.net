@@ -50,7 +50,7 @@ void addEdge(Graph *graph, int src, int dest)
     graph->adjLists[dest] = newNode;
 }
 
-void BFS(Graph *graph, int startVertex)
+void BFS_DFS(Graph *graph, int startVertex)
 {
     node *adjList = graph->adjLists[startVertex];
     node *temp = adjList;
@@ -64,7 +64,7 @@ void BFS(Graph *graph, int startVertex)
             {
                 graph->giovanni_numbers[connectedVertex] = graph->giovanni_numbers[startVertex] + 1;
             }
-            BFS(graph, connectedVertex);
+            BFS_DFS(graph, connectedVertex);
         }
         temp = temp->next;
     }
