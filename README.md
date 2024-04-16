@@ -5,5 +5,6 @@
 
 Autores:
 
-`Gabriel Campello`[https://github.com/G16C]
-`Gabriel Moura`[https://github.com/thegm445]
+[Gabriel Campello](https://github.com/G16C)
+
+[Gabriel Moura](https://github.com/thegm445)
